@@ -17,11 +17,5 @@ window.addEventListener("scrollY", () => {
 
     // scrollTo(0,vpHeight - documentHeight)
     scrollTo(vpHeight - documentHeight)
-
-
-
-
-
-})
-
+});
 
