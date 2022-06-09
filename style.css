@@ -1,0 +1,34 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+
+div {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 48px;
+    color: rgb(46, 34, 16);
+}
+
+
+
+.hi-1 {
+    background-color: papayawhip;
+}
+
+.hi-2 {
+    background-color: wheat;
+}
+
+.hi-3 {
+    background-color: burlywood;
+}
