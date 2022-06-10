@@ -19,3 +19,4 @@ window.addEventListener("scrollY", () => {
     scrollTo(vpHeight - documentHeight)
 });
 
+// Intersection Observe
