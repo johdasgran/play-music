@@ -48,3 +48,22 @@ window.addEventListener("scrollY", () => {
 
 
 // https://dribbble.com/shots/17067630-Acoustic-Mobile-Design-for-Music-Storeg
+
+
+
+
+
+
+
+
+
+
+
+
+//////// GOooood
+
+// app focus xd
+
+// https://dribbble.com/shots/17078450-Brain-fm-Landing-Page/attachments/12168039?mode=media
+
+// https://dribbble.com/shots/15282492-Playo-Web-Music-player
