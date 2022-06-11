@@ -21,3 +21,9 @@ window.addEventListener("scrollY", () => {
 
 // Intersection Observe
 // Diseñar APP MUSIC este fin de semana
+
+// Inspiration
+
+// https://dribbble.com/shots/16429598-Music-player
+
+// https://dribbble.com/shots/16741029-Music-Streaming-Web-App/attachments/11786938?mode=media
