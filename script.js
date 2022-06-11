@@ -38,6 +38,7 @@ window.addEventListener("scrollY", () => {
 
 // https://dribbble.com/shots/17409554-Spotify-App-Redesign-Concept
 
+// https://dribbble.com/shots/14722907-Music-Player-Mobile-Application/attachments/6423681?mode=media
 
 
 
@@ -67,3 +68,5 @@ window.addEventListener("scrollY", () => {
 // https://dribbble.com/shots/17078450-Brain-fm-Landing-Page/attachments/12168039?mode=media
 
 // https://dribbble.com/shots/15282492-Playo-Web-Music-player
+
+// https://dribbble.com/shots/16984481-Brain-fm-Web-App/attachments/12062158?mode=media
