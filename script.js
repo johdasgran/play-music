@@ -4,7 +4,6 @@ console.log(documentHeight)
 
 let vpHeight = window.innerHeight;
 
-
 console.log(documentHeight)
 console.log(vpHeight)
 
