@@ -25,3 +25,8 @@ main.app {
 navbar.menu-app ul {
   list-style: none;
 }
+
+div.logo img {
+  height: 40px;
+  width: auto;
+}
