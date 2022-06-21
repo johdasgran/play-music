@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -18,17 +28,37 @@ body {
 main.app {
   width: 90%;
   height: 90%;
-  background: rgba(39, 25, 72, 0.3);
+  /* background: rgba(39, 25, 72, 0.3); */
+  background-color: rgb(12, 38, 60, 0.6);
   border-radius: 16px;
+}
+
+main.app header {
+  width: 100px;
+  /* background-color: black; */
+}
+
+div.logo,
+navbar.menu-app ul li {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  padding: 24px 28px;
+  cursor: pointer;
+}
+
+div.logo img {
+  height: 40px;
+  width: auto;
 }
 
 navbar.menu-app ul {
   list-style: none;
 }
 
-div.logo img {
-  height: 40px;
-  width: auto;
-  outline: none;
+navbar.menu-app img {
+  height: 20px;
+  /* margin: 24px 28px; */
 }
+
 
