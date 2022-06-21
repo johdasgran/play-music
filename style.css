@@ -20,6 +20,7 @@ body {
     #f7cbfd 0%,
     #7758d1 100%
   );
+  /* background: radial-gradient(73.05% 102.64% at 39.73% 109.18%, #0266B9 0%, #042036 100%); */
   display: flex;
   place-content: center;
   place-items: center;
@@ -31,6 +32,7 @@ main.app {
   /* background: rgba(39, 25, 72, 0.3); */
   background-color: rgb(12, 38, 60, 0.6);
   border-radius: 16px;
+  /* border: 2px solid #000; */
 }
 
 main.app header {
@@ -45,6 +47,20 @@ navbar.menu-app ul li {
   place-items: center;
   padding: 24px 28px;
   cursor: pointer;
+  position: relative;
+}
+
+navbar.menu-app ul li:hover img {
+  filter: brightness(0) invert(1);
+}
+
+navbar.menu-app ul li:hover::before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  filter: blur(20px);
 }
 
 div.logo img {
@@ -58,7 +74,6 @@ navbar.menu-app ul {
 
 navbar.menu-app img {
   height: 20px;
-  /* margin: 24px 28px; */
 }
 
-
+/***** content app ***/
