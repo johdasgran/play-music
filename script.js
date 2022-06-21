@@ -1,20 +1,24 @@
-let documentHeight = document.documentElement.offsetHeight
-
-console.log(documentHeight)
-
-let vpHeight = window.innerHeight;
-
-console.log(documentHeight)
-console.log(vpHeight)
-
-console.log(window.scrollTo(0, documentHeight-vpHeight))
-
-var ticking = false;
-console.log(scrollTo)
-
-window.addEventListener("scrollY", () => {
-    scrollTo(vpHeight - documentHeight)
-});
+//   fetch('https://audius-discovery-5.cultur3stake.com/v1/tracks/trending?app_name=EXAMPLEAPP',
 
 
+// const headers = {
+//     'Accept':'application/json'
+//   };
+  
+//   fetch('https://discoveryprovider.audius1.prod-us-west-2.staked.cloud/v1/tracks/trending?app_name=EXAMPLEAPP',
+//   {
+//     method: 'GET',
+  
+//     headers: headers
+//   })
+//   .then(function(res) {
+//       return res.json();
+//   }).then(function(body) {
+//       console.log(body);
+//   });
 
+
+import audioPlayer from './audio.js'
+
+
+audioPlayer()
