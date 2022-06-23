@@ -27,6 +27,8 @@ body {
 }
 
 main.app {
+  display: flex;
+  position: relative;
   width: 90%;
   height: 90%;
   /* background: rgba(39, 25, 72, 0.3); */
@@ -77,3 +79,9 @@ navbar.menu-app img {
 }
 
 /***** content app ***/
+
+
+.content-cover img {
+ height: 600px;
+ width: auto; 
+}
