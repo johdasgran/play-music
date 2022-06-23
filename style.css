@@ -28,6 +28,7 @@ body {
 
 main.app {
   display: flex;
+  /* place-items: center; */
   position: relative;
   width: 90%;
   height: 90%;
@@ -39,6 +40,7 @@ main.app {
 
 main.app header {
   width: 100px;
+  margin-top: 40px;
   /* background-color: black; */
 }
 
@@ -80,8 +82,86 @@ navbar.menu-app img {
 
 /***** content app ***/
 
+.content-cover {
+  position: absolute;
+  right: 80px;
+  bottom: 76px;
+}
 
 .content-cover img {
- height: 600px;
+ height: 500px;
  width: auto; 
+}
+
+
+
+
+
+
+
+
+
+/***************************************/
+
+.audio-buttons{
+  position: absolute;
+  z-index: 2;
+  align-items: center;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(12, 38, 60, 0.8);
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  border-radius: 0 0 16px 16px;
+}
+
+.audio-buttons #controlAudio{
+  appearance: none;
+  width: 100%;
+  background-color: rgb(66, 66, 66);
+  height: 10px;
+  margin: 0 20px;
+}
+
+
+.audio-buttons #controlAudio::-webkit-slider-thumb {
+  appearance: none;
+  background-color: rgb(41, 115, 131);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+
+
+
+
+/**********************/
+
+
+
+.progress__container {
+  display: inline-flex;
+  background: #a8a8a8;
+  height: 1rem;
+  width: 100%;
+  margin-bottom: 2.4rem;
+  border-radius: 10px;
+  border-radius: 12px;
+  background: #e6e6e6;
+  box-shadow: inset 7px 7px 15px #cdcdcd, inset -7px -7px 15px #ffffff;
+  cursor: pointer;
+  align-self: center;
+}
+
+.progress__bar {
+  background: linear-gradient(360deg, #2da87b, #34dcacfa);
+  border-radius: 12px;
+  transition: all ease-in-out 0.03s;
+}
+
+#progress__fill {
+  width: 0%;
 }
