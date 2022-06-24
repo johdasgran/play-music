@@ -10,6 +10,20 @@ function audioPlayer(){
 
     // console.log(audio.duration)
 
+    let statePlay = true;
+
+    play.addEventListener("click", ()=> {
+      
+      if (statePlay) {
+        statePlay = false;
+        play.classList = "btn-pause"
+      } else {
+        statePlay = true;
+        play.classList = "btn-play"
+      }
+      
+      console.log(statePlay)
+    })
 
     audio.addEventListener("loadeddata",()=>{
         audioDuration = audio.duration
@@ -53,36 +67,9 @@ function audioPlayer(){
     console.log(audio.currentTime)
 
 
+    
 
 
-    /*******************/
-
-    const progressBar = document.getElementById("progress__bar");
-const progressFill = document.getElementById("progress__fill");
-
-const progress = document.getElementById("progress");
-// Listen for click on entire progress bar div (to allow skipping ahead)
-progress.addEventListener("click", function (event) {
-  // Get X coordinate of click in div
-  var rect = this.getBoundingClientRect();
-  // Convert click position to percentage value
-  var percentage = (event.clientX - rect.left) / this.offsetWidth;
-  // Seek to the percentage converted to seconds
-  soundA.currentTime = percentage * soundA.duration;
-  soundB.currentTime = percentage * soundB.duration;
-});
-
-//Frame animations for progress bar fill - converts to CSS percentage
-function stepA() {
-  progressFill.style.width =
-    ((soundA.currentTime / soundA.duration) * 100 || 0) + "%";
-  requestAnimationFrame(stepA);
-}
-function stepB() {
-  progressFill.style.width =
-    ((soundB.currentTime / soundB.duration) * 100 || 0) + "%";
-  requestAnimationFrame(stepB);
-}
 
 
 }

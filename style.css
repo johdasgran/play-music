@@ -127,6 +127,7 @@ input.progress::after {
   z-index: 9;
   align-items: center;
   display: flex;
+  gap: 20px;
   bottom: 0;
   left: 0;
   /* background-color: rgb(12, 38, 60, 0.8); */
@@ -152,12 +153,58 @@ input.progress::after {
 }
 
 
+.audio-buttons button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  /* position: relative; */
+}
 
-g
+button.btn-backward {
+  background: url(./assets/icons/subtract_15_seconds.svg) center/cover no-repeat;
+  height: 12px;
+  width: 20px;
+}
+
+button.btn-play {
+  background: url(./assets/icons/play.svg) center/cover no-repeat;
+  height: 20px;
+  width: 20px;
+}
+
+button.btn-pause {
+  background: url(./assets/icons/pause.svg) center/cover no-repeat;
+  height: 20px;
+  width: 20px;
+}
+
+button.btn-forward {
+  background: url(./assets/icons/add_15_seconds.svg) center/cover no-repeat;
+  height: 12px;
+  width: 20px;
+}
 
 
+button.btn-play:hover {
+  filter: brightness(0) invert(1);
+}
 
+button.btn-play:hover::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  filter: blur(20px);
+}
 
+.buttons-control {
+  display: flex;
+  place-items: center;
+  gap: 20px;
+  width: 300px;
+}
 
 
 
