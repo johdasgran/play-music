@@ -93,9 +93,28 @@ navbar.menu-app img {
  width: auto; 
 }
 
+img.progress {
+  width: 700px;
+  outline: none;
+}
 
 
 
+
+input.progress {
+  position: relative;
+}
+
+
+input.progress::before {
+  content: "";
+  position: absolute;
+  background: url(./assets/icons/Progressbar.svg) center/cover no-repeat;
+  z-index: 8;
+  width: 100%;
+  height: 40px;
+  top: -16px;
+}
 
 
 
