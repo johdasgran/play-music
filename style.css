@@ -93,13 +93,28 @@ navbar.menu-app img {
  width: auto; 
 }
 
-img.progress {
+/* img.progress {
   width: 700px;
   outline: none;
+} */
+
+
+div.progrresBar {
+  width: 100%;
+  position: relative;
 }
 
-
-
+div.progrresBar::after {
+  content: "";
+  position: absolute;
+  background: url(./assets/icons/Progressbar.svg) center/cover no-repeat;
+  z-index: 9;
+  width: 100%;
+  height: 40px;
+  top: -16px;
+  left: 0;
+  opacity: .4;
+}
 
 input.progress {
   position: relative;
@@ -109,13 +124,25 @@ input.progress {
 input.progress::after {
   content: "";
   position: absolute;
-  background: url(./assets/icons/Progressbar.svg) center/cover no-repeat;
+  background: url(./assets/icons/Progressbar.svg) center/coverg no-repeat;
   z-index: 9;
   width: 100%;
   height: 40px;
   top: -16px;
+  /* opacity: .4; */
 }
 
+/* input.progress::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  z-index: -1;
+  width: 24%;
+  height: 28px;
+  background: conic-gradient(from -2.98deg at 3.94% 367.02%, #00DAEA 0deg, #00DAEA 28.91deg, #2719C8 53.28deg, #C441F4 68.28deg, #C441F4 103.91deg, #C441F4 141.41deg, #2719C8 171.41deg, #00DAEA 193.91deg, #00DAEA 231.41deg, #00DAEA 257.66deg, #2719C8 291.41deg, #C441F4 328.91deg, #C441F4 360deg);
+  filter: blur(28px);
+} */
 
 
 
@@ -140,17 +167,17 @@ input.progress::after {
   border-radius: 0 0 16px 16px;
 }
 
-.audio-buttons::after {
+/* .audio-buttons::after {
   position: absolute;
   left: 0;
   z-index: -1;
   content: "";
   width: 100%;
-  height: 32%;
+  height: 32%; */
   /* background: linear-gradient(79.24deg, #00DAEA 19.03%, #1D138B 44.56%, #C441F4 70.21%); */
-  background: conic-gradient(from -2.98deg at 3.94% 367.02%, #00DAEA 0deg, #00DAEA 28.91deg, #2719C8 53.28deg, #C441F4 68.28deg, #C441F4 103.91deg, #C441F4 141.41deg, #2719C8 171.41deg, #00DAEA 193.91deg, #00DAEA 231.41deg, #00DAEA 257.66deg, #2719C8 291.41deg, #C441F4 328.91deg, #C441F4 360deg);
+  /* background: conic-gradient(from -2.98deg at 3.94% 367.02%, #00DAEA 0deg, #00DAEA 28.91deg, #2719C8 53.28deg, #C441F4 68.28deg, #C441F4 103.91deg, #C441F4 141.41deg, #2719C8 171.41deg, #00DAEA 193.91deg, #00DAEA 231.41deg, #00DAEA 257.66deg, #2719C8 291.41deg, #C441F4 328.91deg, #C441F4 360deg);
   filter: blur(28px);
-}
+} */
 
 
 .audio-buttons button {
@@ -219,7 +246,6 @@ section.audio-buttons {
   /* background-color: rgb(66, 66, 66); */
   background: transparent;
   height: 10px;
-  margin: 0 20px;
 }
 
 
@@ -234,7 +260,7 @@ section.audio-buttons {
 
 
 
-
+/*****************************/
 
 
 
@@ -289,27 +315,3 @@ section.audio-buttons {
 /**********************/
 
 
-
-.progress__container {
-  display: inline-flex;
-  background: #a8a8a8;
-  height: 1rem;
-  width: 100%;
-  margin-bottom: 2.4rem;
-  border-radius: 10px;
-  border-radius: 12px;
-  background: #e6e6e6;
-  box-shadow: inset 7px 7px 15px #cdcdcd, inset -7px -7px 15px #ffffff;
-  cursor: pointer;
-  align-self: center;
-}
-
-.progress__bar {
-  background: linear-gradient(360deg, #2da87b, #34dcacfa);
-  border-radius: 12px;
-  transition: all ease-in-out 0.03s;
-}
-
-#progress__fill {
-  width: 0%;
-}

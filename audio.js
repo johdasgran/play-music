@@ -8,6 +8,13 @@ function audioPlayer(){
     const control = document.getElementById("controlAudio")
     const controlVolume = document.getElementById("controlAudioVolume")
 
+    // const progressBar = document.querySelector("input.progress")
+
+    const progressBar = getComputedStyle(document.querySelector('input.progress'), ':before');
+
+
+    console.log(progressBar.getPropertyValue('width'))
+
     // console.log(audio.duration)
 
     let statePlay = true;
@@ -51,10 +58,13 @@ function audioPlayer(){
 
     control.oninput = (event)=>{
         audio.currentTime = (audioDuration/100)*event.target.value
-   
-        console.log(audio.currentTime)
+        
+        // console.log(event.target.value)
+
+
+        // console.log((audioDuration*event.target.value)/100 )
     
-        console.log(audioDuration/100)
+        // console.log(audioDuration/100)
 
     }
 
@@ -64,7 +74,7 @@ function audioPlayer(){
         console.log(event.target.value)
     }
 
-    console.log(audio.currentTime)
+
 
 
     
