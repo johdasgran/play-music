@@ -100,49 +100,78 @@ navbar.menu-app img {
 
 
 div.progrresBar {
-  width: 100%;
+  /* width: 100%; */
+  width: 773px;
   position: relative;
 }
 
 div.progrresBar::after {
   content: "";
   position: absolute;
-  background: url(./assets/icons/Progressbar.svg) center/cover no-repeat;
-  z-index: 9;
+  background: url(./assets/icons/Progressbar.svg) no-repeat;
+  object-fit: cover;
+  object-position: 100%;
+  z-index: 8;
   width: 100%;
   height: 40px;
   top: -16px;
   left: 0;
-  opacity: .4;
+  opacity: .3;
 }
 
 input.progress {
   position: relative;
 }
 
+/* div.test {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  z-index: 9;
+  width: 0%;
+  height: 20px;
+  background: conic-gradient(from -2.98deg at 3.94% 367.02%, #00DAEA 0deg, #00DAEA 28.91deg, #2719C8 53.28deg, #C441F4 68.28deg, #C441F4 103.91deg, #C441F4 141.41deg, #2719C8 171.41deg, #00DAEA 193.91deg, #00DAEA 231.41deg, #00DAEA 257.66deg, #2719C8 291.41deg, #C441F4 328.91deg, #C441F4 360deg);
+  filter: blur(28px);
+  transition: all .3s ease-out;
+  cursor: pointer;
+} */
 
+div.test {
+  content: "";
+  position: absolute;
+  background: url(./assets/icons/Progressbar.svg) no-repeat;
+  z-index: 2;
+  width: 0%;
+  height: 40px;
+  top: -16px;
+  transition: all .2s ease-out;
+  cursor: pointer;
+}
+
+
+/* 
 input.progress::after {
   content: "";
   position: absolute;
-  background: url(./assets/icons/Progressbar.svg) center/coverg no-repeat;
-  z-index: 9;
-  width: 100%;
+  background: url(./assets/icons/Progressbar.svg) no-repeat;
+  z-index: 2;
+  width: 40%;
   height: 40px;
   top: -16px;
-  /* opacity: .4; */
-}
+} */
 
-/* input.progress::before {
+input.progress::before {
   content: "";
   position: absolute;
   top: -10px;
   left: 0;
   z-index: -1;
-  width: 24%;
+  width: 100%;
   height: 28px;
   background: conic-gradient(from -2.98deg at 3.94% 367.02%, #00DAEA 0deg, #00DAEA 28.91deg, #2719C8 53.28deg, #C441F4 68.28deg, #C441F4 103.91deg, #C441F4 141.41deg, #2719C8 171.41deg, #00DAEA 193.91deg, #00DAEA 231.41deg, #00DAEA 257.66deg, #2719C8 291.41deg, #C441F4 328.91deg, #C441F4 360deg);
   filter: blur(28px);
-} */
+  opacity: .6;
+}
 
 
 
@@ -167,17 +196,17 @@ input.progress::after {
   border-radius: 0 0 16px 16px;
 }
 
-/* .audio-buttons::after {
+ /* .audio-buttons::after {
   position: absolute;
   left: 0;
   z-index: -1;
   content: "";
-  width: 100%;
-  height: 32%; */
+  width: 80%;
+  height: 32%;  */
   /* background: linear-gradient(79.24deg, #00DAEA 19.03%, #1D138B 44.56%, #C441F4 70.21%); */
   /* background: conic-gradient(from -2.98deg at 3.94% 367.02%, #00DAEA 0deg, #00DAEA 28.91deg, #2719C8 53.28deg, #C441F4 68.28deg, #C441F4 103.91deg, #C441F4 141.41deg, #2719C8 171.41deg, #00DAEA 193.91deg, #00DAEA 231.41deg, #00DAEA 257.66deg, #2719C8 291.41deg, #C441F4 328.91deg, #C441F4 360deg);
   filter: blur(28px);
-} */
+}  */
 
 
 .audio-buttons button {
@@ -243,13 +272,18 @@ section.audio-buttons {
 .audio-buttons #controlAudio{
   appearance: none;
   width: 100%;
-  /* background-color: rgb(66, 66, 66); */
+  position: relative;
+  z-index: 20;
   background: transparent;
   height: 10px;
+  cursor: pointer;
 }
 
 
 .audio-buttons #controlAudio::-webkit-slider-thumb {
+  opacity: 0;
+  position: relative;
+  z-index: 20;
   appearance: none;
   background-color: rgb(41, 115, 131);
   height: 20px;

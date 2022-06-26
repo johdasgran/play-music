@@ -8,12 +8,12 @@ function audioPlayer(){
     const control = document.getElementById("controlAudio")
     const controlVolume = document.getElementById("controlAudioVolume")
 
-    // const progressBar = document.querySelector("input.progress")
+    
+    const xd = document.querySelector("div.test")
 
-    const progressBar = getComputedStyle(document.querySelector('input.progress'), ':before');
+console.log(xd)
 
 
-    console.log(progressBar.getPropertyValue('width'))
 
     // console.log(audio.duration)
 
@@ -39,6 +39,12 @@ function audioPlayer(){
     audio.addEventListener("timeupdate",(event)=>{
         const percentage = (event.target.currentTime/audioDuration)*100
         control.value = percentage
+
+        console.log(control.value)
+
+        xd.setAttribute("style", `width: ${control.value}%;`);
+
+
     })
 
     play.onclick = ()=>{
@@ -57,8 +63,13 @@ function audioPlayer(){
     }
 
     control.oninput = (event)=>{
-        audio.currentTime = (audioDuration/100)*event.target.value
-        
+        audio.currentTime = (audioDuration/100)*event.target.value;
+
+
+        xd.setAttribute("style", `width: ${event.target.value}%;`);
+
+            // console.log(xd)
+
         // console.log(event.target.value)
 
 
@@ -67,6 +78,13 @@ function audioPlayer(){
         // console.log(audioDuration/100)
 
     }
+
+
+
+
+  
+
+
 
     controlVolume.oninput=(event)=>{
         audio.volume = event.target.value/100
@@ -78,7 +96,6 @@ function audioPlayer(){
 
 
     
-
 
 
 
