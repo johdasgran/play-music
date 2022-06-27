@@ -11,7 +11,6 @@ function audioPlayer(){
     
     const xd = document.querySelector("div.test")
 
-console.log(xd)
 
 
 

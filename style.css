@@ -427,13 +427,13 @@ section.content-songs {
   font-size: 1.2rem;
 }
 
-.like-song {
+.data-song {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.like-song button {
+.data-song button {
   background-color: transparent;
   border: none;
   color: white;
@@ -444,7 +444,7 @@ section.content-songs {
   cursor: pointer;
 }
 
-.like-song button.like-song:before {
+.data-song button.like-song:before {
   content: "";
   position: absolute;
   background: url(./assets/icons/like-it.svg) center/cover no-repeat;
@@ -455,7 +455,7 @@ section.content-songs {
   transform: translateY(-50%);
 }
 
-.like-song button.play-song:before {
+.data-song button.play-song:before {
   content: "";
   position: absolute;
   background: url(./assets/icons/play.svg) center/cover no-repeat;
@@ -466,7 +466,7 @@ section.content-songs {
   transform: translateY(-50%);
 }
 
-.like-song button.like-song:hover::after {
+.data-song button.like-song:hover::after {
   content: "";
   position: absolute;
   left: 0;
@@ -476,7 +476,7 @@ section.content-songs {
   filter: blur(20px);
 } 
 
-.like-song button.play-song:hover::after {
+.data-song button.play-song:hover::after {
   content: "";
   position: absolute;
   left: 0;
@@ -496,24 +496,15 @@ section.content-songs {
 }
 
 section.content-songs::-webkit-scrollbar-track {
-  background-color: rgba(16, 28, 39, 0.519);
+  background-color: transparent;
 }
 
 section.content-songs::-webkit-scrollbar-thumb {
   background: linear-gradient(123.45deg, #0054A7 12.73%, #9A16BD 95.94%);
-  /* background-color: #fff;  color of the scroll thumb */
-  border-radius: 20px; /* roundness of the scroll thumb */
+  border-radius: 20px; 
 }
-
-/** tasks **/
-
-
-/* Works on Chrome, Edge, and Safari */
 
 section.content-songs::-webkit-scrollbar {
-  width: 8px; /* width of the entire scrollbar */
+  width: 8px; 
 }
 
-
-
-/* finish scroll design */
