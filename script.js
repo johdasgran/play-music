@@ -20,12 +20,7 @@
 
 
 
-
-fetch('./API.json')
-  .then(resp => resp.json())
-  .then(data => console.log(data));
-
-
+import {createSongs} from "./createSongs.js";
 
 
 
