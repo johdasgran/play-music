@@ -17,8 +17,22 @@
 //       console.log(body);
 //   });
 
-// import videoPlayer from "./video.js";
+
+
+
+
+fetch('./API.json')
+  .then(resp => resp.json())
+  .then(data => console.log(data));
+
+
+
+
+
+
+
+
 import audioPlayer from "./audio.js";
 
-// videoPlayer()
+
 audioPlayer()
