@@ -5,30 +5,158 @@
         "album": "Un Verano Sin Ti",
         "name": "Después de la Playa",
         "song": "./assets/audio/  Bad Bunny  Después de la Playa 360 Visualizer  Un Verano Sin Ti.mp3",
-        "thumbnail": ""
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
      },
      {
         "id": 1,
         "artist": "Bad Bunny",
         "album": "Un Verano Sin Ti",
-        "name": "Después de la Playa",
-        "song": "./assets/audio/  Bad Bunny  Después de la Playa 360 Visualizer  Un Verano Sin Ti.mp3",
-        "thumbnail": ""
+        "name": "Dos Mil 16",
+        "song": "./assets/audio/  Bad Bunny  Dos Mil 16 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
      },
      {
         "id": 2,
         "artist": "Bad Bunny",
         "album": "Un Verano Sin Ti",
-        "name": "Después de la Playa",
-        "song": "./assets/audio/  Bad Bunny  Después de la Playa 360 Visualizer  Un Verano Sin Ti.mp3",
-        "thumbnail": ""
+        "name": "Efecto",
+        "song": "./assets/audio/  Bad Bunny  Efecto 360 Visualizer  Un Verano Sin Ti.mp3.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
      },
      {
         "id": 3,
         "artist": "Bad Bunny",
         "album": "Un Verano Sin Ti",
-        "name": "Después de la Playa",
-        "song": "./assets/audio/  Bad Bunny  Después de la Playa 360 Visualizer  Un Verano Sin Ti.mp3",
-        "thumbnail": ""
+        "name": "El Apagón",
+        "song": "./assets/audio/  Bad Bunny  El Apagón 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 4,
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "name": "Enséñame a Bailar",
+        "song": "./assets/audio/  Bad Bunny  Enséñame a Bailar 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 5,
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "name": "Me Fui de Vacaciones",
+        "song": "./assets/audio/  Bad Bunny  Me Fui de Vacaciones 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 6,
+        "artist": "Bad Bunny ft Chenco Corleone",
+        "album": "Un Verano Sin Ti",
+        "name": "Me porto bonito",
+        "song": "./assets/audio/  Bad Bunny  Me Porto Bonito ft Chencho Corleone 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 7,
+        "artist": "Bad Bunngy",
+        "album": "Un Verano Sin Ti",
+        "name": "Moscow Mule",
+        "song": "./assets/audio/  Bad Bunny  Moscow Mule Official Video  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 8,
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "name": "Neverita",
+        "song": "./assets/audio/  Bad Bunny  Neverita 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 9,
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "name": "Un Coco",
+        "song": "./assets/audio/  Bad Bunny  Un Coco 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 10,
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "name": "Un Ratito",
+        "song": "./assets/audio/  Bad Bunny  Un Ratito 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 11,
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "name": "Un Verano Sin Ti",
+        "song": "./assets/audio/  Bad Bunny  Un Verano Sin Ti 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 12,
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "name": "Yo No Soy Celoso",
+        "song": "./assets/audio/  Bad Bunny  Yo No Soy Celoso 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 13,
+        "artist": "Bad Bunny ft Bomba Estéreo",
+        "album": "Un Verano Sin Ti",
+        "name": "Ojitos Lindos",
+        "song": "./assets/audio/  Bad Bunny ft Bomba Estéreo  Ojitos Lindos 360 Visualizer.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 14,
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "name": "Andrea",
+        "song": "./assets/audio/  Bad Bunny ft Buscabulla  Andrea 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 15,
+        "artist": "Bad Bunny ft Jhay Cortez",
+        "album": "Un Verano Sin Ti",
+        "name": "Tarot",
+        "song": "./assets/audio/  Bad Bunny ft Jhay Cortez  Tarot 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 16,
+        "artist": "Bad Bunny ft Rauw Alejandro",
+        "album": "Un Verano Sin Ti",
+        "name": "Party",
+        "song": "./assets/audio/  Bad Bunny ft Rauw Alejandro  Party 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 17,
+        "artist": "Bad Bunny ft The Marias",
+        "album": "Un Verano Sin Ti",
+        "name": "Otro Atardecer",
+        "song": "./assets/audio/  Bad Bunny  Un Ratito 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 18,
+        "artist": "Bad Bunny ft Tony Dize",
+        "album": "Un Verano Sin Ti",
+        "name": "La Corriente",
+        "song": "./assets/audio/  Bad Bunny ft Tony Dize  La Corriente 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
+     },
+     {
+        "id": 19,
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "name": "Aguacero",
+        "song": "./assets/audio/Bad Bunny  Aguacero 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": "./assets/images/bad-bunny-un-verano-sin-ti-album-artwork.jpg"
      }
 ]
