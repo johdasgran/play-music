@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -380,3 +381,139 @@ section.audio-buttons {
 /**********************/
 
 
+/********* songs *********/
+
+
+section.content-songs {
+  margin-top: 20px;
+  height: 74vh;
+  width: 70vh;
+  /* background-color: rgba(16, 28, 39, 0.519); */
+  padding: 20px;
+}
+
+.content-info-song {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.image-info-song {
+  display: flex;
+  place-items: center;
+  gap: 16px;
+}
+
+.content-info-song img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.info-song {
+  color: #fff;
+}
+
+.info-song h2 {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.info-song p {
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.like-song {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.like-song button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding-left: 28px;
+  position: relative;
+  cursor: pointer;
+}
+
+.like-song button.like-song:before {
+  content: "";
+  position: absolute;
+  background: url(./assets/icons/like-it.svg) center/cover no-repeat;
+  height: 18px;
+  width: 20px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.like-song button.play-song:before {
+  content: "";
+  position: absolute;
+  background: url(./assets/icons/play.svg) center/cover no-repeat;
+  height: 18px;
+  width: 15px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.like-song button.like-song:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  background-color: #FF4F4F;
+  filter: blur(20px);
+} 
+
+.like-song button.play-song:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 12px;
+  width: 12px;
+  background-color: #FFf;
+  filter: blur(20px);
+} 
+
+
+
+/**************************/
+
+section.content-songs {
+  overflow-y: scroll;
+  /* background: linear-gradient(123.45deg, #0054A7 12.73%, #9A16BD 95.94%); */
+}
+
+section.content-songs::-webkit-scrollbar-track {
+  background-color: rgba(16, 28, 39, 0.519);
+}
+
+section.content-songs::-webkit-scrollbar-thumb {
+  background: linear-gradient(123.45deg, #0054A7 12.73%, #9A16BD 95.94%);
+  /* background-color: #fff;  color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+/** tasks **/
+
+
+/* Works on Chrome, Edge, and Safari */
+
+section.content-songs::-webkit-scrollbar {
+  width: 8px; /* width of the entire scrollbar */
+}
+
+
+
+/* finish scroll design */
