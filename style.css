@@ -87,7 +87,7 @@ navbar.menu-app img {
   position: absolute;
   right: 80px;
   bottom: 76px;
-  z-index: 9;
+  z-index: 4;
 }
 
 .content-cover::before {
@@ -385,6 +385,8 @@ section.audio-buttons {
 
 
 section.content-songs {
+  position: relative;
+  z-index: 20;
   margin-top: 20px;
   height: 74vh;
   width: 70vh;
