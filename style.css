@@ -21,7 +21,6 @@ body {
     #f7cbfd 0%,
     #7758d1 100%
   );
-  /* background: radial-gradient(73.05% 102.64% at 39.73% 109.18%, #0266B9 0%, #042036 100%); */
   display: flex;
   place-content: center;
   place-items: center;
@@ -29,14 +28,11 @@ body {
 
 main.app {
   display: flex;
-  /* place-items: center; */
   position: relative;
   width: 90%;
   height: 90%;
-  /* background: rgba(39, 25, 72, 0.3); */
   background-color: rgb(12, 38, 60, 0.6);
   border-radius: 16px;
-  /* border: 2px solid #000; */
 }
 
 main.app header {
@@ -330,8 +326,6 @@ section.audio-buttons {
 
 
 /*****************************/
-
-
 
 
 

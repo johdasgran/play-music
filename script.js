@@ -1,6 +1,3 @@
-//   fetch('https://audius-discovery-5.cultur3stake.com/v1/tracks/trending?app_name=EXAMPLEAPP',
-
-
 // const headers = {
 //     'Accept':'application/json'
 //   };
@@ -16,14 +13,6 @@
 //   }).then(function(body) {
 //       console.log(body);
 //   });
-
-
-
-
-// import {createSongs} from "./createSongs.js";
-
-
-
 
 
 

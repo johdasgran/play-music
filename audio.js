@@ -87,7 +87,7 @@ function audioPlayer(){
 
     controlVolume.oninput=(event)=>{
         audio.volume = event.target.value/100
-        audio.volume = .2 // por mientras xd
+        // audio.volume = .2 
         console.log(event.target.value)
     }
 

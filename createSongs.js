@@ -3,7 +3,7 @@ const fetch_data = async () => {
   const response = await fetch("./API.json");
   const API_DATA = await response.json();
 
-  console.log(API_DATA);
+  // console.log(API_DATA);
 
   let container = document.querySelector("#content-songs");
 
