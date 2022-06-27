@@ -1,0 +1,34 @@
+[
+    {
+        "id": 0,
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "name": "Después de la Playa",
+        "song": "./assets/audio/  Bad Bunny  Después de la Playa 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": ""
+     },
+     {
+        "id": 1,
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "name": "Después de la Playa",
+        "song": "./assets/audio/  Bad Bunny  Después de la Playa 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": ""
+     },
+     {
+        "id": 2,
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "name": "Después de la Playa",
+        "song": "./assets/audio/  Bad Bunny  Después de la Playa 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": ""
+     },
+     {
+        "id": 3,
+        "artist": "Bad Bunny",
+        "album": "Un Verano Sin Ti",
+        "name": "Después de la Playa",
+        "song": "./assets/audio/  Bad Bunny  Después de la Playa 360 Visualizer  Un Verano Sin Ti.mp3",
+        "thumbnail": ""
+     }
+]
