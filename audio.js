@@ -1,139 +1,102 @@
-function audioPlayer(){
-    const audio = document.getElementById("audio")
-    let audioDuration = audio.duration;
+function audioPlayer() {
+  const audio = document.getElementById("audio");
+  let audioDuration = audio.duration;
 
-    const play = document.getElementById("playAudio")
-    const backwardSeconds = document.getElementById("backwardSecondsAudio")
-    const forwardSeconds = document.getElementById("forwardSecondsAudio")
-    const control = document.getElementById("controlAudio")
-    const controlVolume = document.getElementById("controlAudioVolume")
+  const play = document.getElementById("playAudio");
+  const backwardSeconds = document.getElementById("backwardSecondsAudio");
+  const forwardSeconds = document.getElementById("forwardSecondsAudio");
+  const control = document.getElementById("controlAudio");
+  const controlVolume = document.getElementById("controlAudioVolume");
 
-    
-    const xd = document.querySelector("div.test")
-    const song = document.querySelectorAll(".content-info-song");
+  const xd = document.querySelector("div.test");
+  const song = document.querySelectorAll(".content-info-song");
 
-    const playSong = async () => {
-        const resp = await fetch("./API.json");
-        const id_song = await resp.json();
+  const playSong = async () => {
+    const resp = await fetch("./API.json");
+    const id_song = await resp.json();
 
+    song.forEach((element) => {
+      element.addEventListener("click", () => {
+        console.log(element.id);
 
-  
-  
-        song.forEach(element => {
-            element.addEventListener("click", () => {
-                console.log(element.id);
+        id_song.forEach((ele) => {
+          if (element.id == ele.id) {
+            audio.src = ele.song;
+            audio.play();
+          }
 
-                id_song.forEach(ele => {
+        //   console.log(ele.id);
+        //   console.log(ele.song);
+        });
+      });
+    });
+  };
 
-                    if(element.id == ele.id) {
-                        audio.src = ele.song;
-                        audio.play();
-                    }
+  playSong();
 
+  // console.log(audio.duration)
 
-                    console.log(ele.id)
-                    console.log(ele.song)
-                })
+  let statePlay = true;
 
-
-
-
-
-            })
-        })
-    
-    
+  play.addEventListener("click", () => {
+    if (statePlay) {
+      statePlay = false;
+      play.classList = "btn-pause";
+    } else {
+      statePlay = true;
+      play.classList = "btn-play";
     }
 
-    playSong()
-
-
-
-    // console.log(audio.duration)
-
-    let statePlay = true;
-
-    play.addEventListener("click", ()=> {
-      
-      if (statePlay) {
-        statePlay = false;
-        play.classList = "btn-pause"
-      } else {
-        statePlay = true;
-        play.classList = "btn-play"
-      }
-      
     //   console.log(statePlay)
-    })
+  });
 
-    audio.addEventListener("loadeddata",()=>{
-        audioDuration = audio.duration
-    })
+  audio.addEventListener("loadeddata", () => {
+    audioDuration = audio.duration;
+  });
 
-    audio.addEventListener("timeupdate",(event)=>{
-        const percentage = (event.target.currentTime/audioDuration)*100
-        control.value = percentage
+  audio.addEventListener("timeupdate", (event) => {
+    const percentage = (event.target.currentTime / audioDuration) * 100;
+    control.value = percentage;
 
-        // console.log(control.value)
+    // console.log(control.value)
 
-        xd.setAttribute("style", `width: ${control.value}%;`);
+    xd.setAttribute("style", `width: ${control.value}%;`);
+  });
 
-
-    })
-
-    play.onclick = ()=>{
-        if(audio.paused){
-            audio.play()
-        }else{
-            audio.pause()
-        }
+  play.onclick = () => {
+    if (audio.paused) {
+      audio.play();
+    } else {
+      audio.pause();
     }
+  };
 
-    backwardSeconds.onclick = ()=>{
-        audio.currentTime = audio.currentTime-10
-    }
-    forwardSeconds.onclick = ()=>{
-        audio.currentTime = audio.currentTime+10
-    }
+  backwardSeconds.onclick = () => {
+    audio.currentTime = audio.currentTime - 10;
+  };
+  forwardSeconds.onclick = () => {
+    audio.currentTime = audio.currentTime + 10;
+  };
 
-    control.oninput = (event)=>{
-        audio.currentTime = (audioDuration/100)*event.target.value;
+  control.oninput = (event) => {
+    audio.currentTime = (audioDuration / 100) * event.target.value;
 
+    xd.setAttribute("style", `width: ${event.target.value}%;`);
 
-        xd.setAttribute("style", `width: ${event.target.value}%;`);
+    // console.log(xd)
 
-            // console.log(xd)
+    // console.log(event.target.value)
 
-        // console.log(event.target.value)
+    // console.log((audioDuration*event.target.value)/100 )
 
+    // console.log(audioDuration/100)
+  };
 
-        // console.log((audioDuration*event.target.value)/100 )
-    
-        // console.log(audioDuration/100)
-
-    }
-
-
-
-
-  
-
-
-
-    controlVolume.oninput=(event)=>{
-        audio.volume = event.target.value/100
-        // audio.volume = .2 
-        console.log(event.target.value)
-    }
-
-
-
-
-    
-
-
-
+  controlVolume.oninput = (event) => {
+    audio.volume = event.target.value / 100;
+    // audio.volume = .2
+    console.log(event.target.value);
+  };
 }
-
 
 export default audioPlayer;

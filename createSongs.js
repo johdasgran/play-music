@@ -1,5 +1,4 @@
 const fetch_data = async () => {
-  
   const response = await fetch("./API.json");
   const API_DATA = await response.json();
 
@@ -11,7 +10,7 @@ const fetch_data = async () => {
     // Container
     let content_info = document.createElement("div");
     content_info.classList = "content-info-song";
-    content_info.id = element.id
+    content_info.id = element.id;
     container.appendChild(content_info);
 
     let image_info_song = document.createElement("div");
