@@ -10,7 +10,42 @@ function audioPlayer(){
 
     
     const xd = document.querySelector("div.test")
+    const song = document.querySelectorAll(".content-info-song");
 
+    const playSong = async () => {
+        const resp = await fetch("./API.json");
+        const id_song = await resp.json();
+
+
+  
+  
+        song.forEach(element => {
+            element.addEventListener("click", () => {
+                console.log(element.id);
+
+                id_song.forEach(ele => {
+
+                    if(element.id == ele.id) {
+                        audio.src = ele.song;
+                        audio.play();
+                    }
+
+
+                    console.log(ele.id)
+                    console.log(ele.song)
+                })
+
+
+
+
+
+            })
+        })
+    
+    
+    }
+
+    playSong()
 
 
 
@@ -28,7 +63,7 @@ function audioPlayer(){
         play.classList = "btn-play"
       }
       
-      console.log(statePlay)
+    //   console.log(statePlay)
     })
 
     audio.addEventListener("loadeddata",()=>{
@@ -39,7 +74,7 @@ function audioPlayer(){
         const percentage = (event.target.currentTime/audioDuration)*100
         control.value = percentage
 
-        console.log(control.value)
+        // console.log(control.value)
 
         xd.setAttribute("style", `width: ${control.value}%;`);
 

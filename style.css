@@ -84,6 +84,11 @@ navbar.menu-app img {
   right: 80px;
   bottom: 76px;
   z-index: 4;
+  opacity: .3;
+}
+
+.artwork {
+  display: none;
 }
 
 .content-cover::before {
@@ -327,9 +332,16 @@ section.audio-buttons {
 
 /*****************************/
 
+@media (min-width: 1200px) {
+  .content-cover {
+    opacity: 1;
+  }
+  
+  .artwork {
+    display: flex;
+  }
 
-
-
+}
 
 
 
@@ -394,6 +406,7 @@ section.content-songs {
   align-items: center;
   gap: 16px;
   margin-bottom: 12px;
+  cursor: pointer;
 }
 
 .image-info-song {
